@@ -1,0 +1,185 @@
+body{
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+
+ 	background-repeat: no-repeat;
+  	background-attachment: fixed;
+ 	background-position: center;
+ 	background-size: cover;
+		
+}
+
+
+*, *::before, *::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+}
+img{
+	max-width: 100%;
+}
+
+/*A diveket "div_oldalkezdőbetűje_hanyadikdiv" formában neveztem el*/
+
+/*--Általános--*/
+		.alap{	
+			display: grid;
+			grid-template-areas:
+			". A B ."
+			". C D .";
+			padding: 5rem 0rem;
+			margin: 3rem 0 0 0;
+		}	
+
+		.divaltalanos{
+			border: 2px solid black;
+			margin: 50px 10px;
+			border-radius: 60px;
+			text-align: center;
+			color:white;
+			text-decoration: none;
+			padding: 25px 0px;
+			font-weight: 600;
+			font-size: 700;
+
+
+		}
+/*--Általános_end--*/
+
+/*--Főoldal--*/
+	/*--Divek_és_hoverek--*/
+		.div_f_1{
+
+			grid-area: A;
+			background-color: LightSkyBlue;
+			
+		}
+		.div_f_1:hover{
+			background-color: DodgerBlue;
+
+		}
+		.div_f_2{
+
+			grid-area: B;
+			background-color: lightgreen;
+			
+		}
+		.div_f_2:hover{
+			background-color: MediumSeaGreen;
+		}
+		.div_f_3{
+
+			grid-area: C;
+			background-color: tomato;
+			
+		}
+		.div_f_3:hover{
+			background-color: indianred;
+		}
+		.div_f_4{
+			grid-area: D;
+			background-color: LightSlateGray;
+			
+		}
+		.div_f_4:hover{
+			background-color: grey;
+		}
+	/*--Divek_és_hoverek_end--*/
+/*--Főoldal--*/
+
+/*--Önéletrajz--*/
+
+	.div_o_1{
+
+		border: 2px solid black;
+		text-align: center;
+		max-height: 80%
+		text-align: center;
+		padding: 25px 0px;
+	}
+
+/*--Önéletrajz_end--*/
+
+
+/*--Elerhetosegek--*/
+	/*--Divek és hoverek--*/
+
+		.osszes_div_e{
+			text-shadow: 2px 2px #000000;
+			max-width: 30rem;
+
+		}
+		.div_e_1{
+			grid-area: A;
+			background-color: #ff5c33;
+
+		}
+		.div_e_2{
+			grid-area: B;
+			background-color: CornflowerBlue;
+		}
+		.div_e_2:hover{
+			background-color: DodgerBlue;
+		}
+		.div_e_3{
+			grid-area: C;
+			background-color: #8134af;
+		}
+		.div_e_3:hover{
+			background-color: SlateBlue;
+		}
+		.div_e_4{
+			grid-area: D;
+			background-color: #FFFC00;
+		}
+
+	/*--Divek és hoverek end--*/
+/*--Elerhetosegek_end--*/
+
+/*--Galéria--*/
+	
+	.div_g_1{
+		position: center;
+		max-width: 100%;
+
+	}
+/*--Galéria_end--*/
+
+/*--Hobbik--*/
+	
+	.div_h_1{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-gap: 0.2rem;
+
+	}
+
+	.kartya{
+		display: block;
+		border: 2px solid black;
+		border-radius: 10px;
+		padding: 0.4rem;
+		margin: 0;
+		text-align: center;
+		background-color: lightblue;
+		font-weight: 650;
+		
+	}
+	.kartya img{
+
+		max-height:10rem;
+		display:block;
+		margin:0.4rem auto;
+		border-radius: 12px;
+		
+	}	
+
+	@media only screen and (min-width: 480px){
+		.div_h_1{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+			grid-gap: 0.2rem;
+		}
+	}
+/*--Hobbik_end--*/
